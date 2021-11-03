@@ -16,7 +16,6 @@ check:
 	@echo "========================================"
 	@echo "==> checking the fix "
 	ruby tests/testfix0.rb README.adoc 
-	ruby tests/testfix11.rb 
 
 clean:
 	rm -rf target
