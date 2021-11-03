@@ -227,7 +227,7 @@ On souhaite pleinement bénéficier du changement possible de comportement
 un personnage parmis les types possibles, et de lui affecter une arme.
 . Vérifiez qu'en changeant d'arme, le comportement change.
 
-ifndef::backend-pdf[.pass:[<i class="fa fa-github"></i>] commit/push]
+ifdef::env-github[.:heavy_exclamation_mark: commit/push]
 ifdef::backend-pdf[.icon:github[] commit/push]
 [source,shell]
 ....
