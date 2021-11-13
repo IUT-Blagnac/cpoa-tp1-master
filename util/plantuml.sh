@@ -1,5 +1,5 @@
 #!/bin/bash
-UML=$(mktemp -d)'/model.uml'
+UML=model.uml
 TYPE='PNG'
 MAINPATH='.'
 DOCLETPATH=$MAINPATH/doclet
@@ -17,6 +17,7 @@ echo "Converting $UML to $TYPE..."
 #java -jar $PUMLPATH/plantuml.jar \
 java -Djava.awt.headless=true -jar util/plantuml-1.2021.14.jar \
      -config $PUMLPATH/config.cfg \
+     -o $(pwd) \
      -t $TYPE $UML
 ret=$?
 echo "Done generating PNG from model $ret"
