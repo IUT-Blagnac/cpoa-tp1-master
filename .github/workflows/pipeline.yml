@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   compile-jar:
-    runs-on: adoptopenjdk/openjdk8
+    runs-on: linux
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
