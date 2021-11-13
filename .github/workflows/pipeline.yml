@@ -8,7 +8,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: Install tools
-        run: apt update && apt install graphviz
+        run: "apt update; apt install -y graphviz"
       - name: Build
         run: bash util/plantuml.sh
       - name: Récupérer le diagramme
