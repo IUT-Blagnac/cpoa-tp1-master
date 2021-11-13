@@ -18,3 +18,5 @@ jobs:
         with:
           name: app
           path: "*.png"
+      - name: Setup Graphviz
+        uses: ts-graphviz/setup-graphviz@v1
