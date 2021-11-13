@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 UML=$(mktemp -d)'/model.uml'
 TYPE='PNG'
 MAINPATH='.'
