@@ -5,8 +5,7 @@ MAINPATH='.'
 DOCLETPATH=$MAINPATH/doclet
 PUMLPATH=$MAINPATH/util
 
-set -e
-
+ls -al
 echo "Creating $UML..."
 
 javadoc	-private -quiet	-J-DdestinationFile=$UML -J-DcreatePackages=false -J-DshowPublicMethods=true -J-DshowPublicConstructors=false -J-DshowPublicFields=true -doclet de.mallox.doclet.PlantUMLDoclet -docletpath util/plantUmlDoclet.jar -sourcepath . src/main/java/*.java
