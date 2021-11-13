@@ -2,7 +2,7 @@ name: CI/CD Pipeline
 on: [push]
 
 jobs:
-  compile-jar:
+  generer-dc:
     runs-on: linux
     steps:
       - name: Check out repository code
@@ -22,5 +22,5 @@ jobs:
       - name: Récupérer le diagramme
         uses: actions/upload-artifact@v2
         with:
-          name: app
+          name: dc
           path: "*.png"
