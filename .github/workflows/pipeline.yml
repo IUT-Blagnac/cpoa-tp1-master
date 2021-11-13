@@ -7,8 +7,10 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - name: Install tools
-        run: "apt update; apt install -y graphviz"
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '8'
       - name: Build
         run: bash util/plantuml.sh
       - name: Récupérer le diagramme
