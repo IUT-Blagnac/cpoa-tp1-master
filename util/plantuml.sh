@@ -15,8 +15,7 @@ cat $UML
 
 echo "Converting $UML to $TYPE..."
 #java -jar $PUMLPATH/plantuml.jar \
-java -jar util/plantuml-1.2021.14.jar \
-     -Djava.awt.headless=true  \
+java -Djava.awt.headless=true -jar util/plantuml-1.2021.14.jar \
      -config $PUMLPATH/config.cfg \
      -t $TYPE $UML
 ret=$?
