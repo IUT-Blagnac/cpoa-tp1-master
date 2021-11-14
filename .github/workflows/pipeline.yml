@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   generer-dc:
-    runs-on: linux
+    runs-on: graphviz
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
