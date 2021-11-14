@@ -429,10 +429,10 @@ L'intérêt est double :
 Voici un exemple simple de test qui vérifie quelques points simples de
 l'architecture de l'application :
 
-.Test du modèle UML généré en Ruby (source link:src/java/SuperCanardBof/checkModel.rb[ici])
+.Test du modèle UML généré en Ruby (source link:utils/checkModel.rb[ici])
 [source,ruby]
 ----------
-include::src/java/SuperCanardBof/checkModel.rb[lines=8..200]
+include::utils/checkModel.rb[lines=8..200]
 ----------
 
 Ce qui donne le résultat :
