@@ -240,8 +240,15 @@ TIP: Lire la section <<reverse>> avant d'attaquer cette partie.
 
 Le rendu de ce TP doit se faire sous la forme du diagramme de classe de votre application finale.
 
-Pour cela utilisez les fichiers disponibles en début de ce TP et de l'une des techniques
-suivantes (*`build.xml` recommandée*) :
+- Utilisation du CI automatique (recommandée)
+
+Le fichier .github/workflows/pipeline.yml permet de générer automatiquement le fichier de modèle plantuml (model.uml) ainsi que le diagramme au format image (model.png)
+
+Pour y accéder, dans Github sur votre dépôt: cliquez sur "Actions", sélectionnez la plus récente, puis téléchargez le contenu de l'archive "rendu-tp"
+
+Veuillez à bien vérifier que cette génération fonctionne dans votre dépôt, car elle sert de référence sur le dépôt.
+
+Des adaptations dans le fichier "util/plantuml.sh" seront peut être nécessaires en fonction de votre code. Ne modifiez pas ce fichier (dupliquez le) pour travailler en local afin de ne pas casser le CI.
 
 - Utilisation de {ant} :
 +
