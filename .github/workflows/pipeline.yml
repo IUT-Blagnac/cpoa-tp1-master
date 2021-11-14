@@ -22,7 +22,7 @@ jobs:
       - name: Récupérer le diagramme
         uses: actions/upload-artifact@v2
         with:
-          name: dc
+          name: rendu-tp
           path: | 
             "model.png"
             "model.uml"
