@@ -23,6 +23,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: rendu-tp
-          path: | 
-            "model.png"
-            "model.uml"
+          path: "model.*"
